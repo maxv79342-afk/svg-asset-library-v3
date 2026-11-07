@@ -1,0 +1,442 @@
+{
+ "character": "maya",
+ "units": "px (1 unit = 1 svg user unit)",
+ "root": "torso",
+ "bones": {
+  "torso": {
+   "parent": null,
+   "pivot": [
+    0,
+    0
+   ],
+   "note": "pivot = hips"
+  },
+  "head": {
+   "parent": "torso",
+   "attach": [
+    0,
+    -98
+   ],
+   "pivot_in_part": [
+    0,
+    40.96
+   ],
+   "files": [
+    "head_neutral.svg",
+    "head_happy.svg",
+    "head_sad.svg",
+    "head_angry.svg",
+    "head_shocked.svg",
+    "head_laugh.svg"
+   ]
+  },
+  "upper_arm_near": {
+   "parent": "torso",
+   "attach": [
+    0.5,
+    -85.53831999999998
+   ],
+   "length": 56
+  },
+  "forearm_near": {
+   "parent": "upper_arm_near",
+   "attach": [
+    0,
+    56
+   ],
+   "length": 50
+  },
+  "hand_near": {
+   "parent": "forearm_near",
+   "attach": [
+    0,
+    50
+   ],
+   "files": "hand_*.svg"
+  },
+  "upper_arm_far": {
+   "parent": "torso",
+   "attach": [
+    -5.0,
+    -85.53831999999998
+   ],
+   "length": 56,
+   "z": "behind torso"
+  },
+  "forearm_far": {
+   "parent": "upper_arm_far",
+   "attach": [
+    0,
+    56
+   ],
+   "length": 50
+  },
+  "hand_far": {
+   "parent": "forearm_far",
+   "attach": [
+    0,
+    50
+   ]
+  },
+  "thigh_near": {
+   "parent": "torso",
+   "attach": [
+    2.5,
+    3
+   ],
+   "length": 68
+  },
+  "shin_near": {
+   "parent": "thigh_near",
+   "attach": [
+    0,
+    68
+   ],
+   "length": 64
+  },
+  "foot_near": {
+   "parent": "shin_near",
+   "attach": [
+    0,
+    64
+   ]
+  },
+  "thigh_far": {
+   "parent": "torso",
+   "attach": [
+    -2.5,
+    3
+   ],
+   "length": 68,
+   "z": "behind torso"
+  },
+  "shin_far": {
+   "parent": "thigh_far",
+   "attach": [
+    0,
+    68
+   ],
+   "length": 64
+  },
+  "foot_far": {
+   "parent": "shin_far",
+   "attach": [
+    0,
+    64
+   ]
+  }
+ },
+ "draw_order": [
+  "upper_arm_far",
+  "forearm_far",
+  "hand_far",
+  "thigh_far",
+  "shin_far",
+  "foot_far",
+  "thigh_near",
+  "shin_near",
+  "foot_near",
+  "torso",
+  "head",
+  "upper_arm_near",
+  "forearm_near",
+  "hand_near"
+ ],
+ "rotation": "degrees, 0 = limb hanging straight down, positive = swing forward (toward +x)",
+ "viewBoxes": {
+  "upper_arm_near": [
+   -24,
+   -24,
+   48,
+   104
+  ],
+  "forearm_near": [
+   -24,
+   -24,
+   48,
+   98
+  ],
+  "thigh_near": [
+   -26,
+   -26,
+   52,
+   120
+  ],
+  "shin_near": [
+   -26,
+   -26,
+   52,
+   116
+  ],
+  "foot_near": [
+   -28,
+   -24,
+   76,
+   48
+  ],
+  "upper_arm_far": [
+   -24,
+   -24,
+   48,
+   104
+  ],
+  "forearm_far": [
+   -24,
+   -24,
+   48,
+   98
+  ],
+  "thigh_far": [
+   -26,
+   -26,
+   52,
+   120
+  ],
+  "shin_far": [
+   -26,
+   -26,
+   52,
+   116
+  ],
+  "foot_far": [
+   -28,
+   -24,
+   76,
+   48
+  ],
+  "hand_open": [
+   -24,
+   -18,
+   56,
+   68
+  ],
+  "hand_relax": [
+   -24,
+   -18,
+   58,
+   64
+  ],
+  "hand_grip": [
+   -24,
+   -18,
+   60,
+   58
+  ],
+  "hand_fist": [
+   -24,
+   -18,
+   62,
+   56
+  ],
+  "hand_point": [
+   -24,
+   -18,
+   56,
+   66
+  ],
+  "hand_flat": [
+   -24,
+   -18,
+   56,
+   68
+  ],
+  "hand_claw": [
+   -24,
+   -18,
+   60,
+   60
+  ],
+  "hand_thumb": [
+   -24,
+   -30,
+   56,
+   68
+  ],
+  "hand_peace": [
+   -24,
+   -18,
+   56,
+   66
+  ],
+  "hand_spread": [
+   -26,
+   -20,
+   64,
+   70
+  ],
+  "hand_ok": [
+   -24,
+   -18,
+   56,
+   68
+  ],
+  "hand_pinch": [
+   -24,
+   -18,
+   56,
+   60
+  ],
+  "hand_rock": [
+   -24,
+   -18,
+   62,
+   66
+  ],
+  "hand_call_me": [
+   -24,
+   -20,
+   62,
+   66
+  ],
+  "hand_love_you": [
+   -24,
+   -20,
+   62,
+   68
+  ],
+  "hand_finger_gun": [
+   -24,
+   -18,
+   58,
+   66
+  ],
+  "hand_count_1": [
+   -24,
+   -18,
+   56,
+   66
+  ],
+  "hand_count_2": [
+   -24,
+   -18,
+   50,
+   66
+  ],
+  "hand_count_3": [
+   -24,
+   -18,
+   50,
+   68
+  ],
+  "hand_count_4": [
+   -24,
+   -18,
+   50,
+   68
+  ],
+  "hand_count_5": [
+   -24,
+   -20,
+   62,
+   70
+  ],
+  "hand_beckon": [
+   -24,
+   -18,
+   60,
+   60
+  ],
+  "hand_pen_grip": [
+   -24,
+   -18,
+   56,
+   62
+  ],
+  "hand_cup": [
+   -24,
+   -18,
+   60,
+   64
+  ],
+  "hand_karate": [
+   -24,
+   -18,
+   58,
+   68
+  ],
+  "hand_grab": [
+   -24,
+   -18,
+   60,
+   58
+  ],
+  "hand_wave_a": [
+   -26,
+   -20,
+   64,
+   70
+  ],
+  "hand_wave_b": [
+   -24,
+   -20,
+   62,
+   70
+  ],
+  "hand_knock": [
+   -24,
+   -18,
+   62,
+   56
+  ],
+  "hand_relax_hang": [
+   -24,
+   -18,
+   58,
+   64
+  ],
+  "hand_tap": [
+   -24,
+   -18,
+   60,
+   66
+  ],
+  "hand_shh": [
+   -24,
+   -18,
+   62,
+   66
+  ],
+  "torso": [
+   -40,
+   -162,
+   80,
+   198
+  ],
+  "head_neutral": [
+   -56,
+   -66,
+   110,
+   120
+  ],
+  "head_happy": [
+   -56,
+   -66,
+   110,
+   120
+  ],
+  "head_sad": [
+   -56,
+   -66,
+   110,
+   120
+  ],
+  "head_angry": [
+   -56,
+   -66,
+   110,
+   120
+  ],
+  "head_shocked": [
+   -56,
+   -66,
+   110,
+   120
+  ],
+  "head_laugh": [
+   -56,
+   -66,
+   110,
+   120
+  ]
+ }
+}
